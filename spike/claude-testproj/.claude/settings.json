@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PermissionRequest": [
+      { "hooks": [{ "type": "command", "command": "node ../tools/hook-relay.mjs", "timeout": 90 }] }
+    ],
+    "Notification": [
+      { "hooks": [{ "type": "command", "command": "node ../tools/hook-relay.mjs" }] }
+    ],
+    "Stop": [
+      { "hooks": [{ "type": "command", "command": "node ../tools/hook-relay.mjs" }] }
+    ],
+    "SessionStart": [
+      { "hooks": [{ "type": "command", "command": "node ../tools/hook-relay.mjs" }] }
+    ]
+  }
+}
