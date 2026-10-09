@@ -12,6 +12,14 @@ Build in small, reviewable milestones. Begin by inspecting this folder and recor
 - **Voice:** text-first on web; push-to-talk voice ships on Android first (on-device recognition where available). Web voice comes later behind explicit consent.
 - **Queued commands expire:** a reply/approval that cannot reach the laptop within ~15 min is marked expired, never delivered late.
 - **Send confirmation reads back the target** (provider · project · session) before Send.
+- **Approval card:** provider, project, session, age, exact command + cwd + agent's stated reason. Actions: Allow once, Deny, Deny with note. No remote "always allow" in MVP.
+- **Edit approvals show file path + line counts only** (default; diffs are source code). Revisit if this proves too little context.
+- **Phone answer window: 60 s**, then the hook falls back to the normal local prompt. The agent never blocks on an offline phone. First answer wins; the other surface shows "answered elsewhere".
+- **Risk tiers** (rm, git push, network, writes outside the project) are highlighted on the card. Biometric confirmation is deferred until after MVP.
+- **Push notifications carry no command text** (e.g. "Claude · oneview needs approval").
+- **Desktop Codex threads are read-only in OneView** (stored-state polling). Two-way control exists only in Codex threads OneView starts. Do not install the standalone Codex CLI or the daemon for now.
+- **Codex approval cards show the session's sandbox level** (e.g. read-only). The sandbox stays as configured, and approving a command does not escalate it.
+- **Public repo hygiene:** spike logs are gitignored, and findings are redacted before commit.
 
 ## Preliminary capability matrix (from initial inspection; Phase 0 must confirm)
 Environment: Windows 11, Claude Code 2.1.293 and codex-cli 0.162.0-alpha.2, both bundled in their desktop apps and not on PATH.
