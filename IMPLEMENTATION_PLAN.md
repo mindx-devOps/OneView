@@ -17,6 +17,8 @@ Build in small, reviewable milestones. Begin by inspecting this folder and recor
 - **Phone answer window: 60 s**, then the hook falls back to the normal local prompt. The agent never blocks on an offline phone. First answer wins; the other surface shows "answered elsewhere".
 - **Risk tiers** (rm, git push, network, writes outside the project) are highlighted on the card. Biometric confirmation is deferred until after MVP.
 - **Push notifications carry no command text** (e.g. "Claude · oneview needs approval").
+- **Desktop Codex threads are read-only in OneView** (stored-state polling). Two-way control exists only in Codex threads OneView starts. Do not install the standalone Codex CLI or the daemon for now.
+- **Codex approval cards show the session's sandbox level** (e.g. read-only). The sandbox stays as configured, and approving a command does not escalate it.
 - **Public repo hygiene:** spike logs are gitignored, and findings are redacted before commit.
 
 ## Preliminary capability matrix (from initial inspection; Phase 0 must confirm)
