@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "OneView",
+    "slug": "oneview",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "platforms": ["android"],
+    "android": {
+      "package": "ai.themindx.oneview"
+    }
+  }
+}

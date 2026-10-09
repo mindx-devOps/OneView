@@ -1,0 +1,13 @@
+{
+  "name": "oneview",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "web": "pnpm --filter @oneview/web dev",
+    "android": "pnpm --filter @oneview/android start",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
